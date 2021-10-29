@@ -160,3 +160,22 @@ $ bedtools bamtofastq -i aln.qsort.bam \
 - `md5 file.txt` - md5 hash
 - `shasum file.txt` - SHA-1 hash
 
+## 配置
+
+### 终端提示符设定
+
+- `.bashrc`:
+
+```bash
+PS1="\[\033]2;\h:\u  \w\007\033[33;1m\]\u \033[35;1m\t\033[0m \[\033[36;1m\]\w\[\033[0m\]\n\[\e[32;1m\]$ \[\e[0m\]";
+```
+
+- `.zshrc`:
+
+```zsh
+autoload -U colors && colors
+export PS1="%F{214}%K{000}%m%F{015}%K{000}:%F{039}%K{000}%~%F{015}%K{000}\$ "
+RPROMPT="%F{111}%K{000}[%D{%f/%m/%y}|%@]"
+export CLICOLOR=1
+export LSCOLORS=gafacadabaegedabagacad
+```
