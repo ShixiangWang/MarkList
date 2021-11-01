@@ -189,7 +189,7 @@ cat gdc_manifest_20210723_055904.txt | tr '\t' ,  | loon batch --header "stat -c
 
 > loon来自之前开发的Python程序。
 
-没有成功的计数：
+还没有下载的计数：
 
 ```bash
 cat gdc_manifest_20210723_055904.txt | tr '\t' ,  | loon batch --header "stat -c %s {id}/{filename}; echo {size}" 2>&1 | grep "stat" | wc -l
