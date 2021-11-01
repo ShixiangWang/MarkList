@@ -214,3 +214,8 @@ RPROMPT="%F{111}%K{000}[%D{%f/%m/%y}|%@]"
 export CLICOLOR=1
 export LSCOLORS=gafacadabaegedabagacad
 ```
+
+## 资源
+
+- [TCGA](https://github.com/IARCbioinfo/awesome-TCGA)
+
