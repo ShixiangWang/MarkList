@@ -157,8 +157,37 @@ $ bedtools bamtofastq -i aln.qsort.bam \
 
 ### 完整性检查
 
-- `md5 file.txt` - md5 hash
+- `md5sum file.txt` - md5 hash
 - `shasum file.txt` - SHA-1 hash
+
+### 获取文件的字节大小
+
+- way 1
+
+```bash
+$ getsize() { set -- $(ls -dn "$1") && echo $5; }
+$ getsize 001a4ac5-941f-464f-8f1a-e5f263fc00f0/C440.TCGA-CG-4466-01A-01D-1158-08.8_gdc_realn.bam
+17034541108
+```
+
+- way 2
+
+```sh
+$ stat -c %s 001a4ac5-941f-464f-8f1a-e5f263fc00f0/C440.TCGA-CG-4466-01A-01D-1158-08.8_gdc_realn.bam
+17034541108
+```
+
+> 来源：<https://stackoverflow.com/questions/1815329/portable-way-to-get-file-size-in-bytes-in-shell>
+
+### 检查GDC文件下载数目
+
+在数据目录下运行：
+
+```bash
+cat gdc_manifest_20210723_055904.txt | tr '\t' ,  | loon batch --header "stat -c %s {id}/{filename}; echo {size}" |sed -n 'h;n;G;s,\n,-,;p' | bc | grep "^0$" | wc -l
+```
+
+> loon来自之前开发的Python程序。
 
 ## 配置
 
