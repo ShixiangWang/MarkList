@@ -1,8 +1,9 @@
 #!/usr/bin/env Rscript
 # Check GDC manifest file, remove downloaded IDs from the file
 
-message("Usage: update_manifest.R <manifest_file_path> <file_dir_path>")
-path = commandArgs(trailingOnly = TRUE)[1:2]
+message("Usage: update_manifest.R <manifest_file_path> <file_dir_path> [--update]")
+args = commandArgs(trailingOnly = TRUE)
+path = args[1:2]
 #path = c("~/Downloads/gdc_manifest_20210723_055904.txt", "~/Downloads")
 suppressPackageStartupMessages(library("dplyr"))
 suppressPackageStartupMessages(library("readr"))
@@ -40,23 +41,24 @@ todo = sum(notOK)
 done = length(notOK) - todo
 cli_alert_info("{done} file(s) done, {todo} file(s) to download")
 
-if (todo == 0) {
-  cli_alert_success("All files recorded in manifest have been downloaded, no need to go.")
-  quit()
+if (length(args) > 2 && args[3] == "--update") {
+  if (todo == 0) {
+    cli_alert_success("All files recorded in manifest have been downloaded, no need to go.")
+    quit()
+  }
+  
+  if (done == 0) {
+    cli_alert_success("All files recorded in manifest have not been downloaded, please stick to current manifest.")
+    quit()
+  }
+  
+  cli_alert_info("Generating new manifest file for unfinished tasks")
+  bk_path = path.expand(file.path("~", ".gdc_manifest_bk", paste0(basename(path[1]), "_bk")))
+  cli_alert_info("Backup current manifest file to {bk_path}")
+  if (!dir.exists(dirname(bk_path))) dir.create(dirname(bk_path), recursive = TRUE)
+  write_tsv(df, bk_path)
+  cli_alert_info("Update current manifest file {path[1]}")
+  write_tsv(df[notOK, ], path.expand(path[1]))
+  
+  cli_alert_success("Done")
 }
-
-if (done == 0) {
-  cli_alert_success("All files recorded in manifest have not been downloaded, please stick to current manifest.")
-  quit()
-}
-
-cli_alert_info("Generating new manifest file for unfinished tasks")
-bk_path = path.expand(file.path("~", ".gdc_manifest_bk", paste0(basename(path[1]), "_bk")))
-cli_alert_info("Backup current manifest file to {bk_path}")
-if (!dir.exists(dirname(bk_path))) dir.create(dirname(bk_path), recursive = TRUE)
-write_tsv(df, bk_path)
-cli_alert_info("Update current manifest file {path[1]}")
-write_tsv(df[notOK, ], path.expand(path[1]))
-
-cli_alert_success("Done")
-
