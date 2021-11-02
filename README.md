@@ -1,5 +1,12 @@
 # Personal utils
 
+## Citation
+
+If you are using code in this repo for your research, please cite one of the following papers properly along with the link to the GitHub repository https://github.com/ShixiangWang/utils.
+
+- Wang, Shixiang, et al. "Antigen presentation and tumor immunogenicity in cancer immunotherapy response prediction." Elife 8 (2019): e49020.
+- Wang, Shixiang, et al. "UCSCXenaShiny: an R/CRAN package for interactive analysis of UCSC Xena data." (2021).
+
 ## 数据预处理
 
 ### 构建软链接
@@ -139,14 +146,36 @@ controlled      phs000178       2016-06-03T17:03:06.608739-05:00        Simple N
 
 - <https://github.com/ShixiangWang/IDConverter>
 
-### bam转fastq
+### 检查和更新manifest文件
+
+[检查](check_manifest.R)：
 
 ```bash
-$ samtools sort -n -o aln.qsort.bam aln.bam
+$ check_manifest gdc_manifest_20210901_020451.txt .
+Usage: check_manifest.R <manifest_file_path> <file_dir_path>
 
-$ bedtools bamtofastq -i aln.qsort.bam \
-                      -fq aln.end1.fq \
-                      -fq2 aln.end2.fq
+ℹ Total 243 records
+ℹ Checking bam file stats
+ℹ Non-exist bam file number: 243
+ℹ Unfinished bam file number: 0
+✔ Totol bam files to be downloaded: 243
+
+ℹ Checking bai file stats
+✔ Totol bai files to be downloaded: 243
+```
+
+[更新](update_manifest.R)：
+
+```bash
+$ update_manifest gdc_manifest_20210901_020451.txt . --update
+Usage: update_manifest.R <manifest_file_path> <file_dir_path> [--update]
+
+ℹ Checking file stats
+ℹ 974 file(s) done, 243 file(s) to download
+ℹ Generating new manifest file for unfinished tasks
+ℹ Backup current manifest file to /public/home/zhaoqi/.gdc_manifest_bk/gdc_manifest_20210901_020451.txt_bk
+ℹ Update current manifest file gdc_manifest_20210901_020451.txt
+✔ Done
 ```
 
 ## 文件
@@ -159,6 +188,16 @@ $ bedtools bamtofastq -i aln.qsort.bam \
 
 - `md5sum file.txt` - md5 hash
 - `shasum file.txt` - SHA-1 hash
+
+### bam转fastq
+
+```bash
+$ samtools sort -n -o aln.qsort.bam aln.bam
+
+$ bedtools bamtofastq -i aln.qsort.bam \
+                      -fq aln.end1.fq \
+                      -fq2 aln.end2.fq
+```
 
 ### 获取文件的字节大小
 
