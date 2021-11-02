@@ -219,3 +219,21 @@ export LSCOLORS=gafacadabaegedabagacad
 
 - [TCGA](https://github.com/IARCbioinfo/awesome-TCGA)
 
+## 基因组
+
+### 坐标系
+
+基因组坐标都是相对于参考基因组版本而言的，不同的版本同一个基因坐标可能不同。
+
+在不同的参考基因组版本之间转换坐标可以用到：
+
+- CrossMap
+- LiftOver
+
+另外值得注意的是，由于区间有开放和关闭，不同的编程语言索引也有0和1开始之分。
+它们可能会影响到实际操作的结果。
+
+![](https://gitee.com/ShixiangWang/ImageCollection/raw/master/png/202111011955915.png)
+
+除此之外，由于DNA有两条链，所以在一些处理需要考虑链正反向时（例如将reads对比回基因组）要额外小心。
+
