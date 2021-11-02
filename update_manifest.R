@@ -3,6 +3,10 @@
 
 message("Usage: update_manifest.R <manifest_file_path> <file_dir_path> [--update]")
 args = commandArgs(trailingOnly = TRUE)
+if (length(args) < 2) {
+  message("At least 2 parameters required, see usage above")
+  quit(status = -1)
+}
 path = args[1:2]
 #path = c("~/Downloads/gdc_manifest_20210723_055904.txt", "~/Downloads")
 suppressPackageStartupMessages(library("dplyr"))
