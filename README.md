@@ -7,6 +7,16 @@ If you are using code in this repo for your research, please cite one of the fol
 - Wang, Shixiang, et al. "Antigen presentation and tumor immunogenicity in cancer immunotherapy response prediction." Elife 8 (2019): e49020.
 - Wang, Shixiang, et al. "UCSCXenaShiny: an R/CRAN package for interactive analysis of UCSC Xena data." (2021).
 
+## 进程
+
+### 批量kill
+
+以htop为例。
+
+```bash
+ps aux| grep htop | grep -v grep | awk '{print $2}'| xargs kill -9
+```
+
 ## 数据预处理
 
 ### 构建软链接
