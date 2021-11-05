@@ -190,6 +190,14 @@ Usage: update_manifest.R <manifest_file_path> <file_dir_path> [--update]
 
 ## 文件
 
+### 移除最后一个字节的内容
+
+用来去除最后一行的换行符
+
+```bash
+truncate -s -1 your_file
+```
+
 ### 内容对比
 
 `sdiff`命令
