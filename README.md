@@ -252,6 +252,39 @@ cat gdc_manifest_20210723_055904.txt | tr '\t' ,  | loon batch --header "stat -c
 cat gdc_manifest_20210723_055904.txt | tr '\t' ,  | loon batch --header "stat -c %s {id}/{filename}; echo {size}" 2>&1 | grep "stat" | wc -l
 ```
 
+## Git
+
+将子目录推送到指定分支：
+
+```sh
+$ cat git-gh-deploy                                            
+#!/bin/sh
+if [ -z "$1" ]
+then
+  echo "Which folder do you want to deploy to GitHub Pages?"
+  exit 1
+fi
+git subtree push --prefix $1 origin gh-pages
+```
+
+这个操作有时候会报错，因此可以强制推送：
+
+```sh
+$ cat git-gh-deploy-force                                     
+#!/bin/sh
+if [ -z "$1" ]
+then
+  echo "Which folder do you want to deploy to GitHub Pages?"
+  exit 1
+fi
+git push origin `git subtree split --prefix $1 main`:gh-pages --force
+```
+
+参考：
+
+- https://stackoverflow.com/questions/33172857/how-do-i-force-a-subtree-push-to-overwrite-remote-changes
+- https://gist.github.com/cobyism/4730490
+
 ## 配置
 
 ### 终端提示符设定
