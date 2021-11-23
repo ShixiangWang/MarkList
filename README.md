@@ -327,3 +327,8 @@ export LSCOLORS=gafacadabaegedabagacad
 
 除此之外，由于DNA有两条链，所以在一些处理需要考虑链正反向时（例如将reads对比回基因组）要额外小心。
 
+### 基因
+
+
+- 基因ID注释：[annotables](https://github.com/stephenturner/annotables)
+- 基因信息摘要：[GeneSummary](https://github.com/jokergoo/GeneSummary)
