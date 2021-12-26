@@ -5,9 +5,15 @@ It is similar to the repo [getting-started-with-genomics-tools-and-resources](ht
 
 I would be appreciated if you can give me feedback if you find something is uncorrect/outdated/missing.
 
+*************************
+
 ## Awesome List
 
 - [awesome-R: A curated list of awesome R packages, frameworks and software](https://github.com/qinwf/awesome-R)
+
+## Consoles
+
+- [randy3k/radian: A 21 century R console](https://github.com/randy3k/radian)
 
 ## Development
 
@@ -27,10 +33,13 @@ Tools:
 - [r-lib/cli: Tools for making beautiful & useful command line interfaces](https://github.com/r-lib/cli)
 - [r-lib/crayon: R package for colored terminal output](https://github.com/r-lib/crayon#readme)
 - [r-lib/fs: Provide cross platform file operations based on libuv](https://github.com/r-lib/fs)
+- [tidyverse/glue: Glue strings to data in R. Small, fast, dependency free interpreted string literals](https://github.com/tidyverse/glue)
+- [hadley/lazyeval: Lazy evaluation: an alternative to non-standard evaluation (NSE) for R](https://github.com/hadley/lazyeval)
 - [r-lib/pkgdown: Generate static html documentation for an R package](https://github.com/r-lib/pkgdown)
 - [r-lib/ps: R package to query, list, manipulate system processes](https://github.com/r-lib/ps)
 - [r-lib/R6: Encapsulated object-oriented programming for R](https://github.com/r-lib/R6)
 - [r-lib/rappdirs: Find OS-specific directories to store data, caches, and logs. A port of python's AppDirs](https://github.com/r-lib/rappdirs)
+- [tidyverse/tidyselect: A backend for selecting functions of the tidyverse](https://github.com/tidyverse/tidyselect)
 
 
 
