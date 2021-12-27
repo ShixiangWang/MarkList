@@ -16,6 +16,15 @@ I would be appreciated if you can give me feedback if you find something is unco
 - [vinta/awesome-python: A curated list of awesome Python frameworks, libraries, software and resources](https://github.com/vinta/awesome-python)
 - [grabear/awesome-rshiny: An awesome R-shiny list!](https://github.com/grabear/awesome-rshiny)
 - [nanxstats/awesome-shiny-extensions: Awesome R packages that offer extended UI or server components for the R web framework Shiny](https://github.com/nanxstats/awesome-shiny-extensions)
+
+## Books
+
+### Programming
+
+### Data science
+
+- [Modern R with the tidyverse](https://b-rodrigues.github.io/modern_R/)
+
 ## Consoles
 
 - [randy3k/radian: A 21 century R console](https://github.com/randy3k/radian)
@@ -251,4 +260,12 @@ Parallelism:
 - [vorakl/TrivialRC: A minimalistic RC system and process manager for containers and applications](https://github.com/vorakl/TrivialRC)
 - [RinteRface/charpente: Seamlessly design robust 'shiny' extensions](https://github.com/RinteRface/charpente)
 - [vorakl/TrivialRC: A minimalistic RC system and process manager for containers and applications](https://github.com/vorakl/TrivialRC)
-- 
+
+
+## Writing, Reporting and Sharing
+
+### Writing
+
+- [tufte: a style that Edward Tufte uses in his books and handouts](https://rstudio.github.io/tufte/)
+
+
