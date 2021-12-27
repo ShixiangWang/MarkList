@@ -157,6 +157,7 @@ Parallelism:
 - [kyclark/biofx_python: Code for Mastering Python for Bioinformatics (O'Reilly, 2021, ISBN 9781098100889)](https://github.com/kyclark/biofx_python)
 #### Tools
 
+- [kyclark/new.py: Python program to write new Python programs](https://github.com/kyclark/new.py)
 - [python/mypy: Optional static typing for Python 3 and 2 (PEP 484)](https://github.com/python/mypy)
 - [argparse — Parser for command-line options, arguments and sub-commands](https://docs.python.org/3/library/argparse.html)
 - [json — JSON encoder and decoder](https://docs.python.org/3/library/json.html#module-json)
