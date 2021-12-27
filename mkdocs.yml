@@ -1,0 +1,16 @@
+site_name: Shixiang's Mark List
+theme:
+  name: material
+repo_url: https://github.com/ShixiangWang/MarkList
+edit_uri: https://github.com/ShixiangWang/MarkList/edit/main/
+site_author: Shixiang Wang
+copyright: Copyright © 2021 ShixiangWang
+nav:
+    - Home: index.md
+    - About: https://shixiangwang.github.io/
+markdown_extensions:
+    - smarty
+    - toc:
+        permalink: True
+        separator: "-"
+        toc_depth: 4
