@@ -10,6 +10,7 @@ I would be appreciated if you can give me feedback if you find something is unco
 ## Recommended list
 
 - [crazyhottommy/getting-started-with-genomics-tools-and-resources: Unix, R and python tools for genomics and data science](https://github.com/crazyhottommy/getting-started-with-genomics-tools-and-resources)
+
 ## Awesome list
 
 - [awesome-R: A curated list of awesome R packages, frameworks and software](https://github.com/qinwf/awesome-R)
@@ -35,10 +36,24 @@ I would be appreciated if you can give me feedback if you find something is unco
 - [Idea](https://www.jetbrains.com/idea/)
 - [Jupyter](https://jupyter.org/)
 
-## Polishing
+## Data Science
 
-- [r-lib/asciicast: Turn R scripts into terminal screencasts](https://github.com/r-lib/asciicast)
-- [GuangchuangYu/hexSticker: Hexagon sticker in R](https://github.com/GuangchuangYu/hexSticker/)
+### Toolkits (multifunctionality)
+
+- [tidyverse]
+- [data.table]
+
+### Data import and export
+
+### Data cleaning
+
+- [sfirke/janitor: simple tools for data cleaning in R](https://github.com/sfirke/janitor)
+
+### Visualization
+
+### Writing, Reporting and Sharing
+
+- [tufte: a style that Edward Tufte uses in his books and handouts](https://rstudio.github.io/tufte/)
 
 ## Development
 
@@ -46,6 +61,7 @@ I would be appreciated if you can give me feedback if you find something is unco
 
 - [r-lib/gh: Minimalistic GitHub API client in R](https://github.com/r-lib/gh)
 - [r-lib/ghactions: GitHub actions for R and accompanying R package](https://github.com/r-lib/ghactions)
+
 ### R
 
 #### Materials
@@ -113,12 +129,14 @@ logging:
 #### RStudio plugins
 
 - [gadenbuie/shrtcts: Make Anything an RStudio Shortcut](https://github.com/gadenbuie/shrtcts)
+
 #### Docs 
 
 - [formatR - Format R code automatically - Yihui Xie | 谢益辉](https://yihui.name/formatR)
 - [jimhester/lintr: Static Code Analysis for R](https://github.com/jimhester/lintr)
 - [hafen/packagedocs: simple generation and automated deployment of nice-looking online R package documentation](https://github.com/hafen/packagedocs)
 - [r-lib/pkgdown: Generate static html documentation for an R package](https://github.com/r-lib/pkgdown)
+
 #### Check
 
 - [r-lib/testthat: An R package to make testing](https://github.com/r-lib/testthat)
@@ -166,6 +184,7 @@ Parallelism:
 - [Sphinx Themes — Write the Docs](https://www.writethedocs.org/guide/tools/sphinx-themes/)
 - [kyclark/tiny_python_projects: Code for Tiny Python Projects (Manning, 2020, ISBN 1617297518). Learning Python through test-driven development of games and puzzles](https://github.com/kyclark/tiny_python_projects)
 - [kyclark/biofx_python: Code for Mastering Python for Bioinformatics (O'Reilly, 2021, ISBN 9781098100889)](https://github.com/kyclark/biofx_python)
+
 #### Tools
 
 - [kyclark/new.py: Python program to write new Python programs](https://github.com/kyclark/new.py)
@@ -212,6 +231,7 @@ Parallelism:
 - [ThinkR-open/shinysnippets: A series of shiny related RStudio Snippets](https://github.com/ThinkR-open/shinysnippets)
 - [r4fun/icongram: Icongram for R](https://github.com/r4fun/icongram)
 - [Icons | Font Awesome](https://fontawesome.com/icons?d=gallery)
+
 #### Tools
 
 - [ropensci/plotly: An interactive graphing library for R](https://github.com/ropensci/plotly)
@@ -262,10 +282,8 @@ Parallelism:
 - [vorakl/TrivialRC: A minimalistic RC system and process manager for containers and applications](https://github.com/vorakl/TrivialRC)
 
 
-## Writing, Reporting and Sharing
 
-### Writing
+## Polishing
 
-- [tufte: a style that Edward Tufte uses in his books and handouts](https://rstudio.github.io/tufte/)
-
-
+- [r-lib/asciicast: Turn R scripts into terminal screencasts](https://github.com/r-lib/asciicast)
+- [GuangchuangYu/hexSticker: Hexagon sticker in R](https://github.com/GuangchuangYu/hexSticker/)
