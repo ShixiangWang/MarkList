@@ -3,6 +3,13 @@ docs_dir: "docs"
 site_dir: "site"
 theme:
   name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
 repo_url: https://github.com/ShixiangWang/MarkList
 edit_uri: https://github.com/ShixiangWang/MarkList/edit/main/
 site_author: Shixiang Wang
