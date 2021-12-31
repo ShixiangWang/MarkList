@@ -1,1 +1,0 @@
-/Users/wsx/Documents/GitHub/utils/index.md
