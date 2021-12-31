@@ -6,7 +6,7 @@ edit_uri: https://github.com/ShixiangWang/MarkList/edit/main/
 site_author: Shixiang Wang
 copyright: Copyright © 2021 ShixiangWang
 nav:
-    - Home: index.md
+    - Home: ../README.md
     - About: https://shixiangwang.github.io/
 markdown_extensions:
     - smarty
