@@ -16,5 +16,4 @@ markdown_extensions:
         permalink: True
         separator: "-"
         toc_depth: 4
-#    - markdown_include.include:
-#        base_path: docs
+
