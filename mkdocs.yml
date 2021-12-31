@@ -1,5 +1,5 @@
 site_name: Shixiang's Mark List
-docs_dir: '.'
+#docs_dir: '.'
 theme:
   name: material
 repo_url: https://github.com/ShixiangWang/MarkList
@@ -7,7 +7,7 @@ edit_uri: https://github.com/ShixiangWang/MarkList/edit/main/
 site_author: Shixiang Wang
 copyright: Copyright © 2021 ShixiangWang
 nav:
-    - Home: README.md
+    - Home: ../README.md
     - About: https://shixiangwang.github.io/
 markdown_extensions:
     - smarty
@@ -15,3 +15,5 @@ markdown_extensions:
         permalink: True
         separator: "-"
         toc_depth: 4
+    - markdown_include.include:
+        base_path: docs
