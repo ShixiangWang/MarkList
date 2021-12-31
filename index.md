@@ -136,6 +136,7 @@ logging:
 - [jimhester/lintr: Static Code Analysis for R](https://github.com/jimhester/lintr)
 - [hafen/packagedocs: simple generation and automated deployment of nice-looking online R package documentation](https://github.com/hafen/packagedocs)
 - [r-lib/pkgdown: Generate static html documentation for an R package](https://github.com/r-lib/pkgdown)
+- [cynkra/fledge: Wings for your R packages: Streamline the process of versioning R packages and updating NEWS](https://github.com/cynkra/fledge)
 
 #### Check
 
