@@ -158,6 +158,7 @@ Estimation:
 Optimization:
 
 - [eddelbuettel/rcppexamples: Examples of using Rcpp to interface R and C++](https://github.com/eddelbuettel/rcppexamples)
+- [RcppCore/RcppParallel](https://github.com/RcppCore/RcppParallel)
 - [DavisVaughan/cbuild: Tools to Make Developing R Packages Interfacing with C Easier](https://github.com/DavisVaughan/cbuild)
 - [nchern/go-R: Go bindings for R language](https://github.com/nchern/go-R)
 - [glycerine/rmq: R package providing msgpack and websockets; demonstrates how to utilize Go libraries from R](https://github.com/glycerine/rmq)
