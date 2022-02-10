@@ -10,6 +10,7 @@ I would be appreciated if you can give me feedback if you find something is unco
 ## Recommended list
 
 - [crazyhottommy/getting-started-with-genomics-tools-and-resources: Unix, R and python tools for genomics and data science](https://github.com/crazyhottommy/getting-started-with-genomics-tools-and-resources)
+- [Mikoto10032/DeepLearning: 深度学习入门教程, 优秀文章, Deep Learning Tutorial](https://github.com/Mikoto10032/DeepLearning)
 
 ## Awesome list
 
@@ -18,7 +19,7 @@ I would be appreciated if you can give me feedback if you find something is unco
 - [grabear/awesome-rshiny: An awesome R-shiny list!](https://github.com/grabear/awesome-rshiny)
 - [nanxstats/awesome-shiny-extensions: Awesome R packages that offer extended UI or server components for the R web framework Shiny](https://github.com/nanxstats/awesome-shiny-extensions)
 
-## Books
+## Books/Materials
 
 ### Programming
 
@@ -40,8 +41,8 @@ I would be appreciated if you can give me feedback if you find something is unco
 
 ### Toolkits (multifunctionality)
 
-- [tidyverse]
-- [data.table]
+- [tidyverse](https://github.com/tidyverse/)
+- [data.table](https://github.com/Rdatatable/data.table)
 
 ### Data import and export
 
@@ -55,12 +56,21 @@ I would be appreciated if you can give me feedback if you find something is unco
 
 - [tufte: a style that Edward Tufte uses in his books and handouts](https://rstudio.github.io/tufte/)
 
+### Omics
+
+- [lawremi/ggbio: Grid and ggplot2 based visualization for biological data](https://github.com/lawremi/ggbio)
+- 
+
 ## Development
 
 ### GitHub actions
 
 - [r-lib/gh: Minimalistic GitHub API client in R](https://github.com/r-lib/gh)
 - [r-lib/ghactions: GitHub actions for R and accompanying R package](https://github.com/r-lib/ghactions)
+
+### CLI/GUI
+
+- [spf13/cobra-cli: Cobra CLI tool to generate applications and commands](https://github.com/spf13/cobra-cli)
 
 ### R
 
@@ -108,6 +118,7 @@ Developments:
 - [r-lib/sloop: interactively explore and understand object oriented programming in R, particularly with S3](https://github.com/r-lib/sloop)
 - [tidyverse/tidyselect: A backend for selecting functions of the tidyverse](https://github.com/tidyverse/tidyselect)
 - [Q-language/chk: An R package for developers to check user-supplied function arguments](https://github.com/Q-language/chk)
+- [wch/staticimports: Statically import R functions into packages and projects](https://github.com/wch/staticimports)
 
 logging:
 
@@ -289,4 +300,8 @@ Parallelism:
 
 - [r-lib/asciicast: Turn R scripts into terminal screencasts](https://github.com/r-lib/asciicast)
 - [GuangchuangYu/hexSticker: Hexagon sticker in R](https://github.com/GuangchuangYu/hexSticker/)
+
+## Pipeline/Workflow
+
+- [jtamames/SqueezeMeta: A complete pipeline for metagenomic analysis](https://github.com/jtamames/SqueezeMeta)
 
