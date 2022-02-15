@@ -18,6 +18,7 @@ I would be appreciated if you can give me feedback if you find something is unco
 - [vinta/awesome-python: A curated list of awesome Python frameworks, libraries, software and resources](https://github.com/vinta/awesome-python)
 - [grabear/awesome-rshiny: An awesome R-shiny list!](https://github.com/grabear/awesome-rshiny)
 - [nanxstats/awesome-shiny-extensions: Awesome R packages that offer extended UI or server components for the R web framework Shiny](https://github.com/nanxstats/awesome-shiny-extensions)
+- [IndrajeetPatil/awesome-r-pkgtools](https://github.com/IndrajeetPatil/awesome-r-pkgtools)
 
 ## Books/Materials
 
