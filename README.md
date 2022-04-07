@@ -11,6 +11,7 @@ I would be appreciated if you can give me feedback if you find something is unco
 
 - [crazyhottommy/getting-started-with-genomics-tools-and-resources: Unix, R and python tools for genomics and data science](https://github.com/crazyhottommy/getting-started-with-genomics-tools-and-resources)
 - [Mikoto10032/DeepLearning: 深度学习入门教程, 优秀文章, Deep Learning Tutorial](https://github.com/Mikoto10032/DeepLearning)
+- [Big Book of R](https://www.bigbookofr.com/index.html)
 
 ## Awesome list
 
@@ -19,6 +20,7 @@ I would be appreciated if you can give me feedback if you find something is unco
 - [grabear/awesome-rshiny: An awesome R-shiny list!](https://github.com/grabear/awesome-rshiny)
 - [nanxstats/awesome-shiny-extensions: Awesome R packages that offer extended UI or server components for the R web framework Shiny](https://github.com/nanxstats/awesome-shiny-extensions)
 - [IndrajeetPatil/awesome-r-pkgtools](https://github.com/IndrajeetPatil/awesome-r-pkgtools)
+- [ropensci-archive/PackageDevelopment](https://github.com/ropensci-archive/PackageDevelopment)
 
 ## Books/Materials
 
