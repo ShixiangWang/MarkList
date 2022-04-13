@@ -22,6 +22,10 @@ I would be appreciated if you can give me feedback if you find something is unco
 
 ## Books/Materials
 
+### Bioinformatics tutorial
+
+- [montilab/BS831](https://montilab.github.io/BS831/) https://github.com/montilab/BS831
+
 ### Programming
 
 ### Data science
